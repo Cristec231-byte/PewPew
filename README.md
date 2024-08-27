@@ -6,7 +6,6 @@ Table of Contents
 - Installation
 - How to Play
 - Development
-- Contributing
 - License
 
 #About the Game
@@ -50,17 +49,17 @@ Version Control: Git
 + .git
   
 + Myproject
-  Asset
-  Library
-  Package
-  ProjectSettings
-  UserSettings
+  + Asset
+  + Library
+  + Package
+  + ProjectSettings
+  + UserSettings
   
 + .gitignore
   
 + ReadMe.md
 
-#License
+#License: 
 PewPew is developed using the Unity Student Plan, which provides educational access to the Unity platform. The following terms apply to this project:
 
 Usage Rights:
