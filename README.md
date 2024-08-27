@@ -49,6 +49,7 @@ Version Control: Git
 + .git
   
 + Myproject
+  + .vscode
   + Asset
   + Library
   + Package
