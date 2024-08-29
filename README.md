@@ -10,7 +10,7 @@ Table of Contents
 
 #About the Game
 
-PewPew is a 2D shooting game inspired by a classic game "Contra". As an soldier and a hero, you must confront the alien to protect the planet Earth. Whenever you see the enemy, the only choice you have is to PEWPEW !
+PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an soldier and a hero, you must confront the alien to protect the planet Earth. Whenever you see the enemy, the only choice you have is to PEWPEW !
 
 #Features
 - Shooting
