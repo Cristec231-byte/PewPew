@@ -3,11 +3,14 @@ public class Pmovement : MonoBehaviour
 {
     [SerializeField] private float speed;
     [SerializeField] private LayerMask groundlayer;
+    [SerializeField] private AudioClip runningSound;
+
     private Rigidbody2D body;
     private Animator anim;
     //private bool grounded;
     private BoxCollider2D boxCollider;
     private float horizontalInput;
+    private bool isPlayingRunSound = false;
     
     private void Awake()
     {
@@ -33,6 +36,18 @@ public class Pmovement : MonoBehaviour
         //Set animator parameter
         anim.SetBool("run", horizontalInput != 0);
         anim.SetBool("grounded", isGrounded());
+
+        if(horizontalInput != 0 && isGrounded())
+        {
+            if(!isPlayingRunSound)
+            {
+                SoundManager.instance.PlayLoopingSound(runningSound);
+                
+            }
+        }
+        else{
+            SoundManager.instance.StopLoopingSound();
+        }
     }
 
     private void Jump()
