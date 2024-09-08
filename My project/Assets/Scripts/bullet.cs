@@ -30,6 +30,11 @@ public class bullet : MonoBehaviour
         hit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("explode"); 
+
+        if (collision.tag == "Enemy")
+        {
+            collision.GetComponent<EnemyHealth>().TakeDamage(1);
+        }
     }
 
     public void SetDirection(float _direction)
