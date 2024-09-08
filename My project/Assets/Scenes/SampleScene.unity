@@ -3514,7 +3514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   previousRoom: {fileID: 378007359}
-  nextRoom: {fileID: 0}
+  nextRoom: {fileID: 378007359}
   cam: {fileID: 519420033}
 --- !u!61 &542909891
 BoxCollider2D:
@@ -5623,7 +5623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 0}
+  previousRoom: {fileID: 378007359}
   nextRoom: {fileID: 378007359}
   cam: {fileID: 519420033}
 --- !u!61 &903807400
@@ -9924,7 +9924,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.000023841858, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9935,7 +9935,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0010185, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1614581807
 MonoBehaviour:
@@ -10012,8 +10012,8 @@ Transform:
   m_GameObject: {fileID: 1614581805}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 131.6792, y: -26.5, z: 0}
-  m_LocalScale: {x: 326.76874, y: 4.0548, z: 1}
+  m_LocalPosition: {x: 127.1705, y: -26.5, z: 0}
+  m_LocalScale: {x: 392.03668, y: 4.0548, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
