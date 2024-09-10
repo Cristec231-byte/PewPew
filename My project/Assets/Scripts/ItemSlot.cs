@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Unity.VisualScripting;
 //using UnityEngine.UIElements;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
@@ -17,6 +18,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     public bool isFull;
     public string itemDescription;
     public Sprite emptySprite;
+
+    [SerializeField]
+    private int maxNumberOfItems;
 
     //------item slot--------//
     [SerializeField]
@@ -41,19 +45,43 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
-    public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
+    public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
     {
-        this.itemName = itemName;
-        this.quantity = quantity;
-        this.itemSprite = itemSprite;
-        this.itemDescription = itemDescription;
-        isFull = true;
+        //check to if slot is full
+        if (isFull)
+            return quantity;
 
-        quantityText.text = quantity.ToString();
-        quantityText.enabled = true;
+        //update NAME
+        this.itemName = itemName;
+
+
+        //update IMAGE
+        this.itemSprite = itemSprite;
         itemImage.sprite = itemSprite;
         itemImage.enabled = true;
 
+
+        //update DESCRIPTION
+        this.itemDescription = itemDescription;
+
+        //update QUANTITY
+        this.quantity += quantity;
+        if (this.quantity >= maxNumberOfItems)
+        {
+            quantityText.text = maxNumberOfItems.ToString();
+            quantityText.enabled = true;
+
+            //return the LEFTOVERS
+            int extraItems = this.quantity - maxNumberOfItems;
+            this.quantity = maxNumberOfItems;
+            return extraItems;
+        }
+
+        //update QUANTITY TEXT
+        quantityText.text = quantity.ToString();
+        quantityText.enabled = true;
+
+        return 0;
     }
 
     public void OnPointerClick(PointerEventData eventData)
