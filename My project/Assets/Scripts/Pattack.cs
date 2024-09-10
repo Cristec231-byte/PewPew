@@ -17,9 +17,12 @@ public class Pattack : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKey(KeyCode.J) && cooldownTimer > attackCoolDown )//&& playermovement.canAttack())
-        { Attack();}//cooldownTimer += Time.deltaTime;
-         cooldownTimer += Time.deltaTime;
+        if(!PauseMenu.isPaused)
+        {
+            if(Input.GetKey(KeyCode.J) && cooldownTimer > attackCoolDown )//&& playermovement.canAttack())
+            { Attack();}//cooldownTimer += Time.deltaTime;
+             cooldownTimer += Time.deltaTime;
+        }
     }
 
     private void Attack()
