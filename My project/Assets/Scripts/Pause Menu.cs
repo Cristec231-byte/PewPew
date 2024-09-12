@@ -10,6 +10,13 @@ public class PauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(InitializeUI());
+    }
+
+    IEnumerator InitializeUI()
+    {
+        yield return null;
+
         pauseMenu.SetActive(false);
         isPaused = false;
         Time.timeScale = 1f;

@@ -1,7 +1,7 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MainMenu : MonoBehaviour
 {
@@ -11,6 +11,13 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+        StartCoroutine(InitializeUI());
+    }
+
+    IEnumerator InitializeUI()
+    {
+        yield return null;
+
         mainMenu.SetActive(true);
         scoreBoard.SetActive(false);
         levelSelect.SetActive(false);
@@ -47,6 +54,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Went back to Main Menu");
         mainMenu.SetActive(true);
         scoreBoard.SetActive(false);
+        levelSelect.SetActive(false);
     }
 
     public void QuitGame()
