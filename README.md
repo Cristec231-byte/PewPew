@@ -37,7 +37,7 @@ Installation
   W - Jump (also dodge the enemy fire)
   J - Shoot
 - Pause button: Esc
-- Inventory: 
+- Inventory: E
 
 #Development
 - Tools Used:
