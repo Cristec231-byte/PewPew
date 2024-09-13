@@ -98,6 +98,11 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnLeftClick()
     {
+
+        //to use item, click again the item that was selected
+        if (thisItemseleted)
+            inventoryManager.UseItem(itemName);
+
         //referencing
         inventoryManager.DeselectAllSlots();
         selectedShader.SetActive(true);

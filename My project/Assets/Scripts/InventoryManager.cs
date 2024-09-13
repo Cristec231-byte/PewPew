@@ -8,10 +8,23 @@ public class InventoryManager : MonoBehaviour
     private bool menuActivated;
     public ItemSlot[] itemSlot;
 
+    public ItemSO[] itemSOs;
+
+    //reference
+    public Health playerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        // If playerHealth is not assigned in the Inspector, find it programmatically
+        if (playerHealth == null)
+        {
+            playerHealth = GameObject.FindWithTag("Player").GetComponent<Health>();
+            if (playerHealth == null)
+            {
+                Debug.LogError("Health component reference is missing or not attached to the Player GameObject.");
+            }
+        }
     }
 
     // Update is called once per frame
@@ -56,6 +69,17 @@ public class InventoryManager : MonoBehaviour
         return quantity;
     }*/
 
+
+    public void UseItem(string itemName)
+    {
+        for (int i = 0; i < itemSOs.Length; i++)
+        {
+            if (itemSOs[i].itemName == itemName)
+            {
+                itemSOs[i].UseItem(playerHealth);
+            }
+        }
+    }
     public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
     {
         for (int i = 0; i < itemSlot.Length; i++)

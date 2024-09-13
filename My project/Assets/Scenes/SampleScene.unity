@@ -531,7 +531,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 481361217e20600488dc50b0c21f0378, type: 3}
   itemDescription: 'Hot waffle from Macca~~ nom~~nom~~
 
-    Restore 3 health'
+    Restore 2 health'
 --- !u!61 &43850456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -887,8 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5007553caa1a1b4eae5d1c818a1fe23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Stawberry
-  quantity: 6
+  itemName: Strawberry
+  quantity: 3
   sprite: {fileID: 21300000, guid: d92e356740bd72d4f9651cf78787d1e7, type: 3}
   itemDescription: 'Fresh strawberries from the bushes, sweet and juicy 33333333333
 
@@ -7061,8 +7061,10 @@ MonoBehaviour:
   itemName: Bug
   quantity: 2
   sprite: {fileID: 21300000, guid: 4043a37a958048f4a9402cf4f7c6157f, type: 3}
-  itemDescription: I think you picked up some bugs, do you really want them in your
+  itemDescription: 'I think you picked up some bugs, do you really want them in your
     bag ewwww gross.
+
+    PS: you CAN''T use this item.'
 --- !u!50 &891700429
 Rigidbody2D:
   serializedVersion: 4
@@ -9520,8 +9522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6a9e746be1a704e85a379a3de6ba40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  maxHealth: 10
+  health: 30
+  maxHealth: 50
   slider: {fileID: 1902837205}
 --- !u!1001 &1064311728
 PrefabInstance:
@@ -9843,7 +9845,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: ac99105dfc2ca304fbc9c37d3dff35e1, type: 3}
   itemDescription: "\"A crisp, refreshing white wine with herbaceous notes, made
     from New Zealand.\" \nIt sounds like an expensive wine to you\nLooks very strong,
-    you never know what gonna happen after u dirnk it..."
+    you never know what is gonna happen after u drink it..."
 --- !u!50 &1159302343
 Rigidbody2D:
   serializedVersion: 4
@@ -11457,7 +11459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Beer
-  quantity: 5
+  quantity: 2
   sprite: {fileID: 21300040, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
   itemDescription: "Yummyyy beer~~~ \nRestore 1 health"
 --- !u!224 &1363994105 stripped
@@ -12342,6 +12344,14 @@ MonoBehaviour:
   - {fileID: 1523017769}
   - {fileID: 1264151636}
   - {fileID: 814967422}
+  itemSOs:
+  - {fileID: 11400000, guid: 85cd73a9b8b9bb547aa0045de587aa75, type: 2}
+  - {fileID: 11400000, guid: 2f147691ac3aff844906e5e5fc2fe20d, type: 2}
+  - {fileID: 11400000, guid: 7bcf373cb565be04596155fe531ff18c, type: 2}
+  - {fileID: 11400000, guid: bf439a6a22e5b8645bbb01980ffdd6e1, type: 2}
+  - {fileID: 11400000, guid: 7438958dc36ad69499a73f8c0b4815b6, type: 2}
+  - {fileID: 11400000, guid: 0c1430bb93f66724d975226a58f05d97, type: 2}
+  playerHealth: {fileID: 0}
 --- !u!1 &1483115563
 GameObject:
   m_ObjectHideFlags: 0
@@ -16836,9 +16846,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
-  m_WholeNumbers: 0
-  m_Value: 10
+  m_MaxValue: 50
+  m_WholeNumbers: 1
+  m_Value: 30
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -17481,7 +17491,7 @@ MonoBehaviour:
     Grandma will give you energy!!!!!!!
 
     Restore
-    20 health!!!!!!!!
+    5 health!!!!!!!!
 
 '
 --- !u!50 &1980114322
