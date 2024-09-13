@@ -9,6 +9,7 @@ public class Boss : MonoBehaviour
     [SerializeField] private Transform firepoint2;
     [SerializeField] private GameObject[] fireballs;
 
+
     private Animator anim;
     private float cooldownTimer = Mathf.Infinity;
 
@@ -31,18 +32,19 @@ public class Boss : MonoBehaviour
 
     private void Attack()
     {
-        anim.SetTrigger("attack");
+        anim.SetTrigger("Attack");
         cooldownTimer = 0; // Reset the cooldown timer
+        
 
         // Pooling object bullet
         int fireballIndex = FindFireball();
         fireballs[fireballIndex].transform.position = firepoint.position;
-        fireballs[fireballIndex].GetComponent<EnemyBullet>().SetDirection(Mathf.Sign(-transform.localScale.x));
+        fireballs[fireballIndex].GetComponent<EnemyBullet>().SetDirection(Mathf.Sign(transform.localScale.x));
 
         // Pooling object bullet
         int fireballIndex2 = FindFireball();
         fireballs[fireballIndex2].transform.position = firepoint2.position;
-        fireballs[fireballIndex2].GetComponent<EnemyBullet>().SetDirection(Mathf.Sign(-transform.localScale.x));
+        fireballs[fireballIndex2].GetComponent<EnemyBullet>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 
     private int FindFireball()
