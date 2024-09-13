@@ -70,15 +70,21 @@ public class InventoryManager : MonoBehaviour
     }*/
 
 
-    public void UseItem(string itemName)
+    public bool UseItem(string itemName)
     {
         for (int i = 0; i < itemSOs.Length; i++)
         {
             if (itemSOs[i].itemName == itemName)
             {
-                itemSOs[i].UseItem(playerHealth);
+                bool usable = itemSOs[i].UseItem(playerHealth);
+                if(usable)
+                {
+                    return true;
+                }
             }
+            
         }
+        return false;
     }
     public int AddItem(string itemName, int quantity, Sprite itemSprite, string itemDescription)
     {
