@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
 
     void Start()
     {
-        health = 30;
+        health = maxHealth;
         slider.maxValue = maxHealth;
         slider.value = health;
 
