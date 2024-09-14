@@ -1,34 +1,60 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+
 public class Health : MonoBehaviour
 {
     public int health;
-    public int maxHealth = 10;
+    public int maxHealth = 50;
     public Slider slider;
-    // Start is called before the first frame update
+
+    [SerializeField]
+    private TextMeshProUGUI valueText;
+
     void Start()
     {
         health = maxHealth;
         slider.maxValue = maxHealth;
         slider.value = health;
+
+        UpdateHealthText();
     }
 
-    // Update is called once per frame
+    private void UpdateHealthText()
+    {
+        valueText.text = $"Health: {health}";
+    }
+
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
+        health = Mathf.Clamp(health, 0, maxHealth);
         slider.value = health;
 
-        if(health <= 0)
+        UpdateHealthText();
+
+        if (health <= 0)
         {
             Destroy(gameObject);
         }
+    }
+
+    internal void ChangePlayerHealth(int amountToChangeStat)
+    {
+        health += amountToChangeStat;
+
+        health = Mathf.Clamp(health, 0, maxHealth);
+
+        slider.value = health;
+
+        UpdateHealthText();
     }
 }
