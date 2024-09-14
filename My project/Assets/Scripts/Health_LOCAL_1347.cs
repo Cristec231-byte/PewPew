@@ -3,45 +3,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-
 public class Health : MonoBehaviour
 {
     public int health;
     public int maxHealth = 50;
     public Slider slider;
-
-    [SerializeField]
-    private TextMeshProUGUI valueText;  
-
+    // Start is called before the first frame update
     void Start()
     {
         Debug.Log("Start method called");
-        health = 30;
+        health = maxHealth;
         slider.maxValue = maxHealth;
         slider.value = health;
-        UpdateHealthText();
     }
 
-    private void UpdateHealthText()
-    {
-        valueText.text = $"Health: {health}";  
-    }
-
+    // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void TakeDamage(int amount)
     {
         health -= amount;
-        health = Mathf.Clamp(health, 0, maxHealth); 
         slider.value = health;
 
-        UpdateHealthText();
-
-        if (health <= 0)
+        if(health <= 0)
         {
             Destroy(gameObject);
         }
@@ -49,12 +36,16 @@ public class Health : MonoBehaviour
 
     internal void ChangePlayerHealth(int amountToChangeStat)
     {
+        // Update the player's health
         health += amountToChangeStat;
 
+        // Clamp the health to stay between 0 and maxHealth
         health = Mathf.Clamp(health, 0, maxHealth);
 
+        // Update the health slider
         slider.value = health;
 
-        UpdateHealthText();
+        // Optional: Print to debug console for confirmation
+        Debug.Log($"Health changed by {amountToChangeStat}. New health: {health}");
     }
 }

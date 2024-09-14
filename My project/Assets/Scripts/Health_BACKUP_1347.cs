@@ -16,10 +16,15 @@ public class Health : MonoBehaviour
 
     void Start()
     {
+<<<<<<< HEAD
         Debug.Log("Start method called");
+        health = maxHealth;
+=======
         health = 30;
+>>>>>>> Danielle
         slider.maxValue = maxHealth;
         slider.value = health;
+
         UpdateHealthText();
     }
 
