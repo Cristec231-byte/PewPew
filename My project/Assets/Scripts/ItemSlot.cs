@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Unity.VisualScripting;
+using System;
 //using UnityEngine.UIElements;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
@@ -101,23 +102,63 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         //to use item, click again the item that was selected
         if (thisItemseleted)
-            inventoryManager.UseItem(itemName);
-
-        //referencing
-        inventoryManager.DeselectAllSlots();
-        selectedShader.SetActive(true);
-        thisItemseleted = true;
-        ItemDescriptionNameText.text = itemName;
-        ItemDescriptionText.text = itemDescription;
-        ItemDescriptionImage.sprite = itemSprite;
-        if (ItemDescriptionImage.sprite == null)
         {
-            ItemDescriptionImage.sprite = emptySprite;
+            bool usable = inventoryManager.UseItem(itemName);
+            inventoryManager.UseItem(itemName);
+            this.quantity -= 1;
+            quantityText.text = this.quantity.ToString();
+            if (this.quantity <= 0)
+                EmptySlot();
+        }
+
+        else
+        {
+            //referencing
+            inventoryManager.DeselectAllSlots();
+            selectedShader.SetActive(true);
+            thisItemseleted = true;
+            ItemDescriptionNameText.text = itemName;
+            ItemDescriptionText.text = itemDescription;
+            ItemDescriptionImage.sprite = itemSprite;
+            if (ItemDescriptionImage.sprite == null)
+                ItemDescriptionImage.sprite = emptySprite;
         }
     }
+
+    private void EmptySlot()
+    {
+        quantityText.enabled = false;
+        itemImage.sprite = emptySprite;
+
+        ItemDescriptionNameText.text = "";
+        ItemDescriptionText.text = "";
+        ItemDescriptionImage.sprite = emptySprite;
+        /*
+        quantity = 0;
+        itemName = string.Empty;
+        itemDescription = string.Empty;
+        itemSprite = emptySprite;
+        isFull = false;
+
+        // Reset UI components
+        quantityText.text = string.Empty;
+        quantityText.enabled = false;
+        itemImage.sprite = emptySprite;
+
+        // Reset description details
+        ItemDescriptionNameText.text = string.Empty;
+        ItemDescriptionText.text = string.Empty;
+        ItemDescriptionImage.sprite = emptySprite;
+
+        // Deselect slot
+        selectedShader.SetActive(false);
+        thisItemseleted = false;
+        */
+    }
+
     public void OnRightClick()
     {
 
 
     }
-}
+} 

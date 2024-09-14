@@ -19265,6 +19265,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7774417937266947599, guid: 834dc25403866e7449f32fcd6762c41e, type: 3}
+      propertyPath: emptySprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774417937266947599, guid: 834dc25403866e7449f32fcd6762c41e, type: 3}
       propertyPath: ItemDescriptionText
       value: 
       objectReference: {fileID: 1440695697}

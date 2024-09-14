@@ -21,20 +21,32 @@ public class ItemSO : ScriptableObject
         }
 
     }*/
-    public void UseItem(Health healthComponent)
+    public bool UseItem(Health healthComponent)
     {
         if (statToChange == StatToChange.health)
         {
+
             if (healthComponent != null)
             {
-                // Safely change player health using the passed reference
-                healthComponent.ChangePlayerHealth(amountToChangeStat);
+                //Health playerHealth = healthComponent.ChangePlayerHealth(amountToChangeStat);
+                if(healthComponent.health == healthComponent.maxHealth)
+                {
+                    return false;
+                }
+                else
+                {
+                    // Safely change player health using the passed reference
+                    healthComponent.ChangePlayerHealth(amountToChangeStat);
+                }
+
             }
             else
             {
                 Debug.LogError("Health component reference is missing.");
             }
         }
+        return false;
+
     }
 
     public enum StatToChange
@@ -43,11 +55,4 @@ public class ItemSO : ScriptableObject
         health
     };
 
-    /*
-    public enum AttributeToChange
-    {
-        none,
-        strength, 
-        defense
-    };*/
 }
