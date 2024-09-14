@@ -6,11 +6,11 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Unity.VisualScripting;
 using System;
+using UnityEditor.SceneManagement;
 //using UnityEngine.UIElements;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
-
 
     // -----item data--------//
     public string itemName;
@@ -99,16 +99,27 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnLeftClick()
     {
-
+        
         //to use item, click again the item that was selected
         if (thisItemseleted)
         {
-            bool usable = inventoryManager.UseItem(itemName);
+            //bool usable = inventoryManager.UseItem(itemName);
+
+            
             inventoryManager.UseItem(itemName);
             this.quantity -= 1;
             quantityText.text = this.quantity.ToString();
             if (this.quantity <= 0)
                 EmptySlot();
+            /*
+            if (usable)
+            {
+                this.quantity -= 1;
+                quantityText.text = this.quantity.ToString();
+                if (this.quantity <= 0)
+                    EmptySlot();
+            }
+            */
         }
 
         else
@@ -125,40 +136,96 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    private void EmptySlot()
-    {
-        quantityText.enabled = false;
-        itemImage.sprite = emptySprite;
 
-        ItemDescriptionNameText.text = "";
-        ItemDescriptionText.text = "";
-        ItemDescriptionImage.sprite = emptySprite;
+    
+   private void EmptySlot()
+   {
+       quantityText.enabled = false;
+       itemImage.sprite = null;
+       itemImage.enabled = false;
+
+       ItemDescriptionNameText.text = "";
+       ItemDescriptionText.text = "";
+       ItemDescriptionImage.sprite = emptySprite;
+
+       /*quantity = 0;
+       itemName = string.Empty;
+       itemDescription = string.Empty;
+       itemSprite = emptySprite;
+       isFull = false;
+
+       // Reset UI components
+       quantityText.text = string.Empty;
+       quantityText.enabled = false;
+       itemImage.sprite = emptySprite;
+
+       // Reset description details
+       ItemDescriptionNameText.text = string.Empty;
+       ItemDescriptionText.text = string.Empty;
+       ItemDescriptionImage.sprite = emptySprite;
+
+       // Deselect slot
+       selectedShader.SetActive(false);
+       thisItemseleted = false;
+       */
+        }
+
         /*
-        quantity = 0;
-        itemName = string.Empty;
-        itemDescription = string.Empty;
-        itemSprite = emptySprite;
-        isFull = false;
+        private void EmptySlot()
+        {
+            // Reset the quantity text and hide it
+            quantityText.text = string.Empty;
+            quantityText.enabled = false;
 
-        // Reset UI components
-        quantityText.text = string.Empty;
-        quantityText.enabled = false;
-        itemImage.sprite = emptySprite;
+            // Set the item image to empty sprite or disable it
+            itemImage.sprite = emptySprite;
+            itemImage.enabled = false;  // Hides the image completely when empty
 
-        // Reset description details
-        ItemDescriptionNameText.text = string.Empty;
-        ItemDescriptionText.text = string.Empty;
-        ItemDescriptionImage.sprite = emptySprite;
+            // Clear item data
+            itemName = string.Empty;
+            itemDescription = string.Empty;
+            itemSprite = null;  // Clear the sprite reference
 
-        // Deselect slot
-        selectedShader.SetActive(false);
-        thisItemseleted = false;
-        */
-    }
+            // Reset the item description details
+            ItemDescriptionNameText.text = string.Empty;
+            ItemDescriptionText.text = string.Empty;
+            ItemDescriptionImage.sprite = emptySprite;
 
-    public void OnRightClick()
+            // Hide the shader effect or selection indicator
+            selectedShader.SetActive(false);
+            thisItemseleted = false;
+
+            // Set the slot to not full
+            isFull = false;
+        }*/
+
+
+        public void OnRightClick()
     {
+        //create new item
+        GameObject itemToDrop = new GameObject(itemName);
+        Item newItem = itemToDrop.AddComponent<Item>();
+        newItem.quantity = 1;
+        newItem.itemName = itemName;
+        newItem.sprite = itemSprite;
+        newItem.itemDescription = itemDescription;
 
+        //create and modify the SR
+        SpriteRenderer sr = itemToDrop.AddComponent<SpriteRenderer>();
+        sr.sprite = itemSprite;
+        sr.sortingOrder = 0;
+        sr.sortingLayerName = "Ground";
 
+        //Add a collider
+        itemToDrop.AddComponent<BoxCollider2D>();
+
+        //set the location
+        itemToDrop.transform.position = GameObject.FindWithTag("Player").transform.position + new Vector3(.5f, 0, 0);
+
+        //subtract item
+        this.quantity -= 1;
+        quantityText.text = this.quantity.ToString();
+        if (this.quantity <= 0)
+            EmptySlot();
     }
 } 

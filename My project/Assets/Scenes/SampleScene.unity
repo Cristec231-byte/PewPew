@@ -9522,7 +9522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6a9e746be1a704e85a379a3de6ba40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 30
+  health: 50
   maxHealth: 50
   slider: {fileID: 1902837205}
 --- !u!1001 &1064311728
@@ -14070,7 +14070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe16e0a106c70924295506e5c8b4317b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 50
   playerHealth: {fileID: 0}
 --- !u!212 &1614581808
 SpriteRenderer:
