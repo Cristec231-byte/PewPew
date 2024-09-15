@@ -17,39 +17,44 @@ public class bullet : MonoBehaviour
 
     private void Update()
     {
-         if(hit) return;
+        if (hit) return; 
+
         float movementSpeed = speed * Time.deltaTime * direction;
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
-        if(lifetime > 5) gameObject.SetActive(false);
+        if (lifetime > 5)
+            gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hit = true;
-        boxCollider.enabled = false;
-        anim.SetTrigger("explode"); 
+        if (collision.CompareTag("Door"))
+            return;
 
-        if (collision.tag == "Enemy")
+        if (collision.CompareTag("Enemy"))
         {
+            hit = true;
+            boxCollider.enabled = false;
+            anim.SetTrigger("explode");
             collision.GetComponent<EnemyHealth>().TakeDamage(1);
         }
+
+      
     }
 
     public void SetDirection(float _direction)
     {
-        lifetime = 0;
+        lifetime = 0; 
         direction = _direction;
         gameObject.SetActive(true);
-        hit = false;
-    boxCollider.enabled = true;
+        hit = false; 
+        boxCollider.enabled = true; 
 
-    float localScaleX = transform.localScale.x;
-    if(Mathf.Sign(localScaleX) != _direction)
-    localScaleX = -localScaleX;
-    transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
-
+        float localScaleX = transform.localScale.x;
+        if (Mathf.Sign(localScaleX) != _direction)
+            localScaleX = -localScaleX;
+        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
     }
 
     private void Deactivate()
@@ -57,4 +62,3 @@ public class bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 }
-
