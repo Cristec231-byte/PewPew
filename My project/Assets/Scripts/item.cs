@@ -6,17 +6,17 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     [SerializeField]
-    private string itemName;
+    public string itemName;
 
     [SerializeField]
-    private int quantity;
+    public int quantity;
 
     [SerializeField]
-    private Sprite sprite;
+    public Sprite sprite;
 
     [TextArea]
     [SerializeField]
-    private string itemDescription;
+    public string itemDescription;
 
     private InventoryManager inventoryManager;
 
@@ -40,7 +40,7 @@ public class Item : MonoBehaviour
             {
                 quantity = leftOverItems;
             }
-            
+
         }
     }
 }

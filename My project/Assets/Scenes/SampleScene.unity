@@ -1823,7 +1823,7 @@ GameObject:
   - component: {fileID: 127837479}
   - component: {fileID: 127837478}
   m_Layer: 0
-  m_Name: Stawberry
+  m_Name: Strawberry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Stawberry
-  quantity: 6
+  quantity: 3
   sprite: {fileID: 21300000, guid: d92e356740bd72d4f9651cf78787d1e7, type: 3}
   itemDescription: 'Fresh strawberries from the bushes, sweet and juicy 33333333333
 
@@ -17436,7 +17436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Bug
-  quantity: 2
+  quantity: 1
   sprite: {fileID: 21300000, guid: 4043a37a958048f4a9402cf4f7c6157f, type: 3}
   itemDescription: I think you picked up some bugs, do you really want them in your
     bag ewwww gross.
@@ -23987,7 +23987,7 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: ac99105dfc2ca304fbc9c37d3dff35e1, type: 3}
   itemDescription: "\"A crisp, refreshing white wine with herbaceous notes, made
     from New Zealand.\" \nIt sounds like an expensive wine to you\nLooks very strong,
-    you never know what gonna happen after u dirnk it..."
+    you never know what gonna happen after u drink it..."
 --- !u!50 &1159302343
 Rigidbody2D:
   serializedVersion: 4
@@ -26781,7 +26781,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1289965992}
-  - component: {fileID: 1289965993}
   - component: {fileID: 1289965994}
   m_Layer: 0
   m_Name: Enemy Patrol (11)
@@ -26809,22 +26808,6 @@ Transform:
   - {fileID: 1753949405}
   m_Father: {fileID: 378007359}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1289965993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1289965991}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5510ad703f44f84e81a6806a5addd61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftBorder: {fileID: 1161105011}
-  rightBorder: {fileID: 1753949405}
-  Enemy: {fileID: 0}
-  speed: 10
 --- !u!114 &1289965994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28244,7 +28227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Beer
-  quantity: 5
+  quantity: 2
   sprite: {fileID: 21300040, guid: 142ff8784e552734f9d6a895491d0ae8, type: 3}
   itemDescription: "Yummyyy beer~~~ \nRestore 1 health"
 --- !u!1 &1359629246
@@ -30578,6 +30561,16 @@ MonoBehaviour:
   - {fileID: 1523017769}
   - {fileID: 1264151636}
   - {fileID: 814967422}
+  itemSOs:
+  - {fileID: 11400000, guid: 50b7407d65142614ca4f883ae8ed3425, type: 2}
+  - {fileID: 11400000, guid: d93dc87290a1dbe489072687b8e8f750, type: 2}
+  - {fileID: 11400000, guid: 665500c3a06f38940b54eb97081fb3ad, type: 2}
+  - {fileID: 11400000, guid: 786310a7f47139548bdd22bb171cc96a, type: 2}
+  - {fileID: 11400000, guid: 2cc10cff92775db4e907eef26da898cc, type: 2}
+  - {fileID: 11400000, guid: e196cc76ad611e84c9fc8d9ae5c3ed0d, type: 2}
+  - {fileID: 11400000, guid: 1528ab470df64d14ba5193944bcd8d01, type: 2}
+  - {fileID: 11400000, guid: 4094cba960649cc409c6c39fb0eed8b6, type: 2}
+  playerHealth: {fileID: 0}
 --- !u!1 &1483115563
 GameObject:
   m_ObjectHideFlags: 0

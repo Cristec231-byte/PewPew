@@ -17,28 +17,44 @@ public class Patrol : MonoBehaviour
     private bool movingLeft;
 
     private void Awake() {
-        iP = Enemy.localScale;
+        if (Enemy != null)
+        {
+            iP = Enemy.localScale; // Save initial scale
+        }
     }
 
     private void Update() {
-        if (movingLeft) {
-            if (Enemy.position.x >= leftBorder.position.x) {
-                MovDir(-1);
+        if (Enemy == null)
+        {
+            // Optionally, you could add some fallback or destroy this object if the enemy is missing
+            return;
+        }
+
+        // Moving left logic
+        if (movingLeft)
+        {
+            if (Enemy.position.x >= leftBorder.position.x)
+            {
+                MovDir(-1); // Move left
             }
-            else {
-                DirChg();
+            else
+            {
+                DirChg();   // Change direction to right
+            }
+        }
+        // Moving right logic
+        else
+        {
+            if (Enemy.position.x <= rightBorder.position.x)
+            {
+                MovDir(1);  // Move right
+            }
+            else
+            {
+                DirChg();   // Change direction to left
             }
         }
 
-        else {
-            if (Enemy.position.x <= rightBorder.position.x) {
-                MovDir(1);
-            }
-            else {
-                DirChg();
-            }
-        }
-        
     }
 
     //method to change direction
