@@ -903,6 +903,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &59524395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,6 +1247,7 @@ MonoBehaviour:
   maxHealth: 4
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &88808064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1625,6 +1627,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &111042387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1819,7 +1822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -1452.6803, y: 726}
+  m_AnchoredPosition: {x: -1452.6802, y: 726}
   m_SizeDelta: {x: -3103.36, y: 171.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &111046929
@@ -2326,6 +2329,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &130568977
 Animator:
   serializedVersion: 5
@@ -9179,6 +9183,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &488093114
 Animator:
   serializedVersion: 5
@@ -9450,6 +9455,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &496823285
 Animator:
   serializedVersion: 5
@@ -10529,6 +10535,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!1001 &529339457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12823,6 +12830,7 @@ MonoBehaviour:
   maxHealth: 4
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &641555761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15056,6 +15064,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &761982795
 Animator:
   serializedVersion: 5
@@ -15362,6 +15371,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &764756143
 Animator:
   serializedVersion: 5
@@ -21211,6 +21221,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &1023297373
 Animator:
   serializedVersion: 5
@@ -23170,6 +23181,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &1082383171
 Animator:
   serializedVersion: 5
@@ -27173,6 +27185,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!95 &1275538560
 Animator:
   serializedVersion: 5
@@ -27893,6 +27906,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &1314521286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29940,6 +29954,7 @@ MonoBehaviour:
   maxHealth: 25
   slider: {fileID: 111046929}
   valueText: {fileID: 1836481508}
+  gameOverScript: {fileID: 1657894694}
 --- !u!95 &1406103904
 Animator:
   serializedVersion: 5
@@ -36850,6 +36865,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &1739889557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37113,6 +37129,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &1753911300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38714,6 +38731,7 @@ MonoBehaviour:
   maxHealth: 2
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &1799981058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41249,6 +41267,7 @@ MonoBehaviour:
   maxHealth: 4
   slider: {fileID: 0}
   valueText: {fileID: 0}
+  gameOverScript: {fileID: 0}
 --- !u!114 &1914311595
 MonoBehaviour:
   m_ObjectHideFlags: 0

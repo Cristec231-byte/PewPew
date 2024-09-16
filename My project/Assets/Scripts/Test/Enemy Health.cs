@@ -13,6 +13,9 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI valueText;
 
+     [SerializeField]
+    private GameOverScript gameOverScript;
+
     void Start()
     {
         health = maxHealth;
@@ -39,6 +42,13 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 0)
         {
+             // Notify GameOverScript about the Boss death
+            if (gameOverScript != null)
+            {
+                gameOverScript.ShowGameOverScreen();
+                Time.timeScale = 0;
+            }
+            
             Destroy(gameObject);
         }
 
