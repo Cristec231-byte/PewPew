@@ -27,6 +27,7 @@ public class GameOverScript : MonoBehaviour
     private void RestartGame()
     {
         // Reload the current scene to restart the game
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
