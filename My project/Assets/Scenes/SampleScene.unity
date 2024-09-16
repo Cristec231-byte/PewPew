@@ -901,6 +901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &59524395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1242,6 +1244,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   maxHealth: 4
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &88808064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1619,6 +1623,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &111042387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2229,6 +2235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &130568977
 Animator:
   serializedVersion: 5
@@ -8922,6 +8930,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &488093114
 Animator:
   serializedVersion: 5
@@ -9191,6 +9201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &496823285
 Animator:
   serializedVersion: 5
@@ -10022,7 +10034,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d269db9183d39c4b9be7e73d1a4a6d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.45
+  target: {fileID: 1052895749}
+  offset: {x: 0, y: 0, z: -10}
+  smoothFactor: 6
+  minValues: {x: 0, y: 0, z: -10}
+  maxValue: {x: 262.1, y: 0, z: -10}
 --- !u!1 &525942683
 GameObject:
   m_ObjectHideFlags: 0
@@ -10264,6 +10280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!1001 &529339457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10446,9 +10464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 378007359}
-  nextRoom: {fileID: 378007359}
-  cam: {fileID: 519420033}
 --- !u!61 &542909891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12484,6 +12499,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   maxHealth: 4
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &641555761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14613,6 +14630,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &761982795
 Animator:
   serializedVersion: 5
@@ -14917,6 +14936,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &764756143
 Animator:
   serializedVersion: 5
@@ -17965,12 +17986,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 903807396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aa51dd1a5ef991448e69f2a79773b23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 378007359}
-  nextRoom: {fileID: 378007359}
-  cam: {fileID: 519420033}
+  slider: {fileID: 0}
 --- !u!61 &903807400
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20631,6 +20650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &1023297373
 Animator:
   serializedVersion: 5
@@ -22453,6 +22474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &1082383171
 Animator:
   serializedVersion: 5
@@ -26352,6 +26375,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &1275538560
 Animator:
   serializedVersion: 5
@@ -27069,6 +27094,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &1314521286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28859,9 +28886,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 386091447}
-  nextRoom: {fileID: 2049966961}
-  cam: {fileID: 519420033}
 --- !u!61 &1397912216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29117,6 +29141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 25
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!95 &1406103904
 Animator:
   serializedVersion: 5
@@ -32677,9 +32703,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 2049966961}
-  nextRoom: {fileID: 316193158}
-  cam: {fileID: 519420033}
 --- !u!61 &1567875891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35862,6 +35885,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &1739889557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36123,6 +36148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &1753911300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36896,9 +36923,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousRoom: {fileID: 579939012}
-  nextRoom: {fileID: 386091447}
-  cam: {fileID: 519420033}
 --- !u!50 &1777498834
 Rigidbody2D:
   serializedVersion: 4
@@ -37725,6 +37749,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   maxHealth: 2
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &1799981058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40124,6 +40150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   maxHealth: 4
+  slider: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!114 &1914311595
 MonoBehaviour:
   m_ObjectHideFlags: 0
