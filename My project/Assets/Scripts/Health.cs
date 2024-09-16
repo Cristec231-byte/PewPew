@@ -14,6 +14,10 @@ public class Health : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI valueText;
 
+    // Reference to the GameOverScript
+    [SerializeField]
+    private GameOverScript gameOverScript;
+
     void Start()
     {
         health = maxHealth;
@@ -43,6 +47,11 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
+            // Notify GameOverScript about the player death
+            if (gameOverScript != null)
+            {
+                gameOverScript.ShowGameOverScreen();
+            }
             Destroy(gameObject);
         }
     }
