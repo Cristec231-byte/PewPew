@@ -10055,7 +10055,6 @@ GameObject:
   m_Component:
   - component: {fileID: 542909888}
   - component: {fileID: 542909891}
-  - component: {fileID: 542909890}
   - component: {fileID: 542909889}
   m_Layer: 0
   m_Name: Door (1)
@@ -10106,18 +10105,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &542909890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542909887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &542909891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21934,7 +21921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1493fe2c573b68d4d8da6ab2d53bbb6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 11
+  speed: 11.9
   groundlayer:
     serializedVersion: 2
     m_Bits: 64
@@ -25407,9 +25394,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e868db84b98fa6c4da36d375646c5a16, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ca25a1f991d80ac4da6025ea084be699, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.309
+  m_Volume: 0.206
   m_Pitch: 0.75
   Loop: 1
   Mute: 0
@@ -27587,7 +27574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1329275643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28922,7 +28909,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1397912213}
   - component: {fileID: 1397912216}
-  - component: {fileID: 1397912215}
   - component: {fileID: 1397912214}
   m_Layer: 0
   m_Name: Door (1)
@@ -28973,18 +28959,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1397912215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1397912212}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1397912216
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -32935,7 +32909,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1567875888}
   - component: {fileID: 1567875891}
-  - component: {fileID: 1567875890}
   - component: {fileID: 1567875889}
   m_Layer: 0
   m_Name: Door (1)
@@ -32986,18 +32959,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1567875890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567875887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &1567875891
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36006,7 +35967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1690373221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37365,7 +37326,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1777498831}
   - component: {fileID: 1777498832}
-  - component: {fileID: 1777498833}
   - component: {fileID: 1777498834}
   m_Layer: 0
   m_Name: Door
@@ -37434,18 +37394,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0798772, y: 2.6674287}
   m_EdgeRadius: 0
---- !u!114 &1777498833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777498830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18dbb3127859e54438fae3e179dc4299, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1777498834
 Rigidbody2D:
   serializedVersion: 4
