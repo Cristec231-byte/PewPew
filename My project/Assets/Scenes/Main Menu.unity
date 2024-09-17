@@ -603,8 +603,10 @@ MonoBehaviour:
 
     E - open/close inventory
 
-    Esc - Pause
-    the game'
+    Right click
+    mouse - use items in inventory
+
+    Esc - Pause the game'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2806aa61e678d634c8e4161357bdbe70, type: 2}
   m_sharedMaterial: {fileID: 4196189024750544689, guid: 2806aa61e678d634c8e4161357bdbe70, type: 2}
@@ -880,7 +882,7 @@ GameObject:
   - component: {fileID: 418382079}
   - component: {fileID: 418382078}
   - component: {fileID: 418382077}
-  - component: {fileID: 418382076}
+  - component: {fileID: 418382080}
   m_Layer: 0
   m_Name: Level 2 Button
   m_TagString: Untagged
@@ -908,21 +910,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 750, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &418382076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418382074}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0f9a6378dfd7045899741967f27da2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenu: {fileID: 1844537541}
-  scoreBoard: {fileID: 1571158542}
-  levelSelect: {fileID: 0}
 --- !u!114 &418382077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,8 +954,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 418382076}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 418382080}
+        m_TargetAssemblyTypeName: Mainmenu2, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -1017,6 +1004,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418382074}
   m_CullTransparentMesh: 1
+--- !u!114 &418382080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418382074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92ea7b43741d35d4dac600bf8034e94f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 1844537541}
+  scoreBoard: {fileID: 1571158542}
+  levelSelect: {fileID: 0}
 --- !u!1 &499277622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,7 +2485,7 @@ GameObject:
   - component: {fileID: 1293701237}
   - component: {fileID: 1293701236}
   - component: {fileID: 1293701235}
-  - component: {fileID: 1293701234}
+  - component: {fileID: 1293701238}
   m_Layer: 0
   m_Name: Level 3 Button
   m_TagString: Untagged
@@ -2511,21 +2513,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 750, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1293701234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1293701232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e0f9a6378dfd7045899741967f27da2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenu: {fileID: 1844537541}
-  scoreBoard: {fileID: 1571158542}
-  levelSelect: {fileID: 0}
 --- !u!114 &1293701235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2570,8 +2557,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1293701234}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+      - m_Target: {fileID: 1293701238}
+        m_TargetAssemblyTypeName: MainMenu3, Assembly-CSharp
         m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
@@ -2620,6 +2607,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1293701232}
   m_CullTransparentMesh: 1
+--- !u!114 &1293701238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293701232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cf016c355e9ab240903b425ac28304d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 0}
+  scoreBoard: {fileID: 0}
+  levelSelect: {fileID: 0}
 --- !u!1 &1424273339
 GameObject:
   m_ObjectHideFlags: 0
@@ -2806,7 +2808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -300}
+  m_AnchoredPosition: {x: 0, y: -489}
   m_SizeDelta: {x: 750, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1445366234
