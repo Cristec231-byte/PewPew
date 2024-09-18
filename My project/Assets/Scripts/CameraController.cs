@@ -2,23 +2,27 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    //Room camera
-  [SerializeField] private float speed;
-  private float currentPosX;
-  private Vector3 velocity = Vector3.zero;
+    public Transform target;
+    public Vector3 offset;
+    [Range(1, 10)]
+    public float smoothFactor;
+    public Vector3 minValues, maxValue;
 
-  //follow player
-  //[SerializeField] private Transform player;
+    private void FixedUpdate()
+    {
+        Follow();
+    }
 
-  private void Update()
-  {
-    //Room camera
-    transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z),ref velocity, speed);
-    //transform.position = new Vector3(player.position.x, transform.position.y, transform.position.z);
-  }
-  
- public void MoveToNewRoom(Transform _newRoom)
- {
-    currentPosX = _newRoom.position.x;
- }
+    void Follow()
+    {
+        Vector3 targetPosition = target.position + offset;
+
+        Vector3 boundPosition = new Vector3(
+            Mathf.Clamp(targetPosition.x, minValues.x, maxValue.x),
+            Mathf.Clamp(targetPosition.x, minValues.y, maxValue.y),
+            Mathf.Clamp(targetPosition.x, minValues.z, maxValue.z));
+
+        Vector3 smoothPosition = Vector3.Slerp(transform.position, boundPosition, smoothFactor * Time.deltaTime);
+        transform.position = smoothPosition;
+    }
 }

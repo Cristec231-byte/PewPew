@@ -6,6 +6,9 @@ public class Pattack : MonoBehaviour
     [SerializeField] private Transform firepoint;
     [SerializeField] private GameObject[] fireballs;
 
+    [Header("SFX")]
+    [SerializeField] private AudioClip shootingsound;
+
     private Animator anim;
     private Pmovement playermovement;
     private float cooldownTimer = Mathf.Infinity;
@@ -17,13 +20,17 @@ public class Pattack : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetKey(KeyCode.J) && cooldownTimer > attackCoolDown )//&& playermovement.canAttack())
-        { Attack();}//cooldownTimer += Time.deltaTime;
-         cooldownTimer += Time.deltaTime;
+        if(!PauseMenu.isPaused)
+        {
+            if(Input.GetKey(KeyCode.J) && cooldownTimer > attackCoolDown )//&& playermovement.canAttack())
+            { Attack();}//cooldownTimer += Time.deltaTime;
+             cooldownTimer += Time.deltaTime;
+        }
     }
 
     private void Attack()
     {
+        SoundManager2.instance.PlaySound(shootingsound);
         anim.SetTrigger("attack");
        cooldownTimer = 0;
        //pooling object bullet
