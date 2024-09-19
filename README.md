@@ -10,7 +10,7 @@ Table of Contents
 
 #About the Game
 
-PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an soldier and a hero, you must confront the alien to protect the planet Earth. Whenever you see the enemy, the only choice you have is to PEWPEW !
+PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an soldier and a hero, you must confront the demons to protect the planet Earth. Whenever you see the enemy, the only choice you have is to PEWPEW !
 
 #Features
 - Shooting
@@ -19,10 +19,15 @@ PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an so
 - Jump up and drop down through platforms
 - Smooth movements
 - Audio
-- Different levels
+- Different difficultiy levels
 
 #Screenshots
-![Screenshot 2024-08-27 154112](https://github.com/user-attachments/assets/054eeac8-cd46-4ce4-9a14-03cd88e78cfd)
+![Screenshot 2024-09-19 142017](https://github.com/user-attachments/assets/672aea6d-4fe3-432a-8326-50f36df4775f)
+![Screenshot 2024-09-19 142039](https://github.com/user-attachments/assets/2f2701b1-6a2a-4da8-b130-265469c164ce)
+![Screenshot 2024-09-19 141747](https://github.com/user-attachments/assets/292c5c46-b0e9-4c44-b51d-8829fbe47e36)
+![Screenshot 2024-09-19 141837](https://github.com/user-attachments/assets/7cc9b89c-bb3e-434a-bb1c-a879e29ba098)
+![Screenshot 2024-09-19 141856](https://github.com/user-attachments/assets/71e2394a-7a1e-4ccf-b98f-0f87f4d04ec6)
+
 
 Installation
 - Clone the repository:
@@ -33,11 +38,12 @@ Installation
 - Movements:
   A - move left
   D - move right
-  S - Drop down
+  S - Drop down platforms
   W - Jump (also dodge the enemy fire)
   J - Shoot
 - Pause button: Esc
 - Inventory: E
+- right click mouse to use items in inventory
 
 #Development
 - Tools Used:
