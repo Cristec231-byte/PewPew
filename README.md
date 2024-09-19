@@ -14,11 +14,20 @@ PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an so
 
 #Features
 - Shooting
+- Basic enemies and Boss
+- Camera movement (following player)
+- Player health bar
+- Boss health bar
+- Game Over Screen
+- Main menu Screen
+- Pause effect button
+- Picking up item for healing
+- Description of items
 - Dodgeing enemy fire
 - Iventory
 - Jump up and drop down through platforms
 - Smooth movements
-- Audio
+- Audio (background soundtrack, player running sound effect, shooting sound effect)
 - Different difficultiy levels
 
 #Screenshots
