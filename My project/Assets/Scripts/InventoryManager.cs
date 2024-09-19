@@ -5,7 +5,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject InventoryMenu;
-    private bool menuActivated;
+    public static bool menuActivated;
     public ItemSlot[] itemSlot;
 
     public ItemSO[] itemSOs;
@@ -34,17 +34,29 @@ public class InventoryManager : MonoBehaviour
         {
             if (Input.GetButtonDown("Inventory") && menuActivated)
             {
-                Time.timeScale = 1;
-                InventoryMenu.SetActive(false);
-                menuActivated = false;
+                CloseInventory();
             }
             else if (Input.GetButtonDown("Inventory") && !menuActivated)
             {
-                Time.timeScale = 0;
-                InventoryMenu.SetActive(true);
-                menuActivated = true;
+                OpenInventory();
             }
         }
+    }
+
+    public void OpenInventory()
+    {
+        Debug.Log("Inventory Opened");
+        Time.timeScale = 0;
+        InventoryMenu.SetActive(true);
+        menuActivated = true;
+    }
+
+    public void CloseInventory()
+    {
+        Debug.Log("Inventory Closed");
+        Time.timeScale = 1;
+        InventoryMenu.SetActive(false);
+        menuActivated = false;
     }
 
 

@@ -25,11 +25,19 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if(isPaused)
+            if (isPaused)
             {
-                ResumeGame();
+                // Game unpauses if there's no inventory present
+                if (InventoryManager.menuActivated)
+                {
+                    ClosePauseMenuOnly();
+                }
+                else
+                {
+                    ResumeGame();
+                }
             }
             else
             {
@@ -51,6 +59,14 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("Game resumed");
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
+        isPaused = false;
+    }
+
+    // If player unpauses game while inventory is shown it will only dismiss the Pause Menu.
+    public void ClosePauseMenuOnly()
+    {
+        Debug.Log("Closed pause menu, game still paused due to inventory");
+        pauseMenu.SetActive(false);
         isPaused = false;
     }
 }
