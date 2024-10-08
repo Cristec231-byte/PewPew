@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using static Unity.VisualScripting.Member;
 
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    public Sound[] musicSounds, pewSounds;
-    public AudioSource musicSource, pewSource;
+    public Sound[] musicSounds, pewSounds, sfxSounds;
+    public AudioSource musicSource, pewSource, sfxSource;
 
     public void Awake()
     {
@@ -54,6 +55,50 @@ public class AudioManager : MonoBehaviour
         {
             pewSource.PlayOneShot(s.clip);
             
+        }
+    }
+    public void PlaySFX(string name)
+    {
+        Sound s = Array.Find(sfxSounds, x => x.name == name);
+
+        if (s == null)
+        {
+            Debug.Log("Sound not found");
+        }
+        else
+        {
+            sfxSource.clip = s.clip;
+            sfxSource.Play();
+
+        }
+    }
+
+    // Play a looping sound
+    public void PlayLoopingSound(string name)
+    {
+        Sound s = Array.Find(sfxSounds, x => x.name == name);
+        if (s == null)
+        {
+            Debug.Log("Sound not found");
+        }
+        else
+        {
+            sfxSource.clip = s.clip;
+            sfxSource.loop = true;
+            sfxSource.Play();
+
+        }
+        
+        
+    }
+
+    // Stop the looping sound
+    public void StopLoopingSound()
+    {
+        if (sfxSource.isPlaying) // Stop only if it is playing
+        {
+            sfxSource.loop = false;
+            sfxSource.Stop();
         }
     }
 }
