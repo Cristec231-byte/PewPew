@@ -48,6 +48,7 @@ public class Pmovement : MonoBehaviour
         else{
             SoundManager.instance.StopLoopingSound();
         }
+        
     }
 
     private void Jump()

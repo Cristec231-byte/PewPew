@@ -30,8 +30,10 @@ public class Pattack : MonoBehaviour
 
     private void Attack()
     {
-        SoundManager2.instance.PlaySound(shootingsound);
-        anim.SetTrigger("attack");
+        //SoundManager2.instance.PlaySound(shootingsound);
+        AudioManager.instance.PlayPew("Pew1");
+        
+       anim.SetTrigger("attack");
        cooldownTimer = 0;
        //pooling object bullet
        fireballs[FindFireball()].transform.position = firepoint.position;
