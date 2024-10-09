@@ -82,15 +82,6 @@ public class UIController : MonoBehaviour
 
     public void GoBackToPauseMenu()
     {
-        // You can either disable the volume menu or load a scene if your pause menu is a separate scene.
-        // If your pause menu is a UI panel, just set it active/inactive.
-
-        // For example, to deactivate the volume menu and reactivate the pause menu:
-        //gameObject.SetActive(false); // Assuming this script is on the volume menu
-        // GameObject.Find("PauseMenu").SetActive(true); // Assuming you have a GameObject named "PauseMenu"
-
-        // If the pause menu is a separate scene, use SceneManager:
-        // SceneManager.LoadScene("PauseMenuSceneName"); // Use the actual name of your pause menu scene
         Debug.Log("Trying to go back to pause menu");
 
         // Check if references are set
