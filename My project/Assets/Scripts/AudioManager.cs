@@ -101,4 +101,36 @@ public class AudioManager : MonoBehaviour
             sfxSource.Stop();
         }
     }
+
+    public void ToggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    public void TogglePew()
+    {
+        pewSource.mute = !pewSource.mute;   
+    }
+
+    public void ToggleSfx()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
+    public void MusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    public void PewVolume(float volume)
+    {
+        pewSource.volume = volume;
+    }
+
+    public void SfxVolume(float volume)
+    {
+        sfxSource.volume = volume;
+    }
 }
+
+
