@@ -6,8 +6,8 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int health;
-    public int maxHealth = 10;
+    public float health;
+    public float maxHealth = 10;
     public Slider slider;
 
     [SerializeField]
@@ -36,7 +36,9 @@ public class EnemyHealth : MonoBehaviour
 
     }
 
-    public void TakeDamage(int amount)
+    
+
+    public void TakeDamage(float amount)
     {
         health -= amount;
 
