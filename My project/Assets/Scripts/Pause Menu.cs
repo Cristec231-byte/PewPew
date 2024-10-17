@@ -40,6 +40,12 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Check if the volume menu is active
+            if (volumeMenu.activeSelf)
+            {
+                return; // Do nothing if the volume menu is open
+            }
+
             if (isPaused)
             {
                 // Game unpauses if there's no inventory present

@@ -11059,7 +11059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 455768132}
-  volumeMenu: {fileID: 0}
+  volumeMenu: {fileID: 1138163}
   volumeButton: {fileID: 0}
 --- !u!1 &525942683
 GameObject:
@@ -18035,7 +18035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 0.4}
+  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -18074,7 +18074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 455768132}
   volumeMenu: {fileID: 1138163}
-  volumeButton: {fileID: 0}
+  volumeButton: {fileID: 822383283}
 --- !u!1 &825210385
 GameObject:
   m_ObjectHideFlags: 0
@@ -18889,8 +18889,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
-  scoreBoard: {fileID: 0}
+  howToPlayMenu: {fileID: 0}
   levelSelect: {fileID: 0}
+  characterSelect: {fileID: 0}
 --- !u!114 &865767952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26881,7 +26882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 0.4}
+  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -26919,8 +26920,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 0}
-  scoreBoard: {fileID: 0}
+  howToPlayMenu: {fileID: 0}
   levelSelect: {fileID: 0}
+  characterSelect: {fileID: 0}
 --- !u!1 &1181584949
 GameObject:
   m_ObjectHideFlags: 0
@@ -32723,7 +32725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 0.4}
+  m_Color: {r: 1, g: 0.6784314, b: 0.039215688, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -35053,7 +35055,7 @@ MonoBehaviour:
   _musicButton: {fileID: 0}
   _pewButton: {fileID: 0}
   _sfxButton: {fileID: 0}
-  _backButton: {fileID: 0}
+  _backButton: {fileID: 1510659295}
   mutedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   unmutedColor: {r: 1, g: 1, b: 1, a: 1}
   pauseMenu: {fileID: 455768132}
