@@ -510,6 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!1 &27849837
 GameObject:
   m_ObjectHideFlags: 0
@@ -2789,6 +2790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &144548038
 Animator:
   serializedVersion: 5
@@ -3207,6 +3209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &193735606
 Animator:
   serializedVersion: 5
@@ -11600,6 +11603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &589058388
 Animator:
   serializedVersion: 5
@@ -15083,6 +15087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &757866142
 Animator:
   serializedVersion: 5
@@ -20122,6 +20127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &934695532
 Animator:
   serializedVersion: 5
@@ -22190,6 +22196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &1043351240
 Animator:
   serializedVersion: 5
@@ -33618,6 +33625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &1540259530
 Animator:
   serializedVersion: 5
@@ -34824,6 +34832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &1604450581
 Animator:
   serializedVersion: 5
@@ -41161,6 +41170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &1857037441
 Animator:
   serializedVersion: 5
@@ -43300,6 +43310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 1
 --- !u!95 &1940213601
 Animator:
   serializedVersion: 5

@@ -9,6 +9,8 @@ public class bullet : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float lifetime;
 
+    [SerializeField] public float Damage;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -37,7 +39,7 @@ public class bullet : MonoBehaviour
             hit = true;
             boxCollider.enabled = false;
             anim.SetTrigger("explode");
-            collision.GetComponent<EnemyHealth>().TakeDamage(1);
+            collision.GetComponent<EnemyHealth>().TakeDamage(Damage);
         }
 
       
