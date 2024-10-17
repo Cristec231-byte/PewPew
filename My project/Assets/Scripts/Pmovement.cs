@@ -41,13 +41,17 @@ public class Pmovement : MonoBehaviour
         {
             if(!isPlayingRunSound)
             {
-                SoundManager.instance.PlayLoopingSound(runningSound);
-                
+                AudioManager.instance.PlayLoopingSound("Running");
+                isPlayingRunSound = true; // Set to true when the sound starts
+
             }
         }
         else{
-            SoundManager.instance.StopLoopingSound();
+            AudioManager.instance.StopLoopingSound();
+            isPlayingRunSound = false; // Set to false when the sound stops
         }
+
+
     }
 
     private void Jump()

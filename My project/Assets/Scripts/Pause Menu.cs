@@ -1,21 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+
+    public GameObject volumeMenu; // Reference to the volume menu
+    public Button volumeButton; // Reference to the Volume button
+
     public static bool isPaused;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(InitializeUI());
+
+        // Add listener to the Volume button
+        if (volumeButton != null)
+        {
+            volumeButton.onClick.AddListener(GoToVolumeMenu);
+        }
     }
 
     IEnumerator InitializeUI()
     {
         yield return null;
+
+        volumeMenu.SetActive(false);
 
         pauseMenu.SetActive(false);
         isPaused = false;
@@ -27,6 +40,12 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Check if the volume menu is active
+            if (volumeMenu.activeSelf)
+            {
+                return; // Do nothing if the volume menu is open
+            }
+
             if (isPaused)
             {
                 // Game unpauses if there's no inventory present
@@ -69,4 +88,13 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         isPaused = false;
     }
+
+    public void GoToVolumeMenu()
+    {
+        // Disable the pause menu and enable the volume menu
+        pauseMenu.SetActive(false); // Hide the pause menu
+        volumeMenu.SetActive(true);  // Show the volume menu
+    }
+
+
 }
