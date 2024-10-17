@@ -26,12 +26,30 @@ public class MainMenu : MonoBehaviour
         characterSelect.SetActive(false);
     }
 
+    // EASY SCENES
+
     // Change to Easy Mode Scene (SampleScene)
     public void PlayEasyMode()
     {
         Debug.Log("Went to Easy Scene (SampleScene)");
         SceneManager.LoadScene("SampleScene");
     }
+
+    // Change to Easy 2
+    public void PlayEasyMode2()
+    {
+        Debug.Log("Went to Easy Scene 2");
+        SceneManager.LoadScene("Easy2");
+    }
+
+    // Change to Easy 3
+    public void PlayEasyMode3()
+    {
+        Debug.Log("Went to Easy Scene 3");
+        SceneManager.LoadScene("Easy3");
+    }
+
+    // MEDIUM SCENES
 
     // Change to Medium Mode Scene
     public void PlayMediumMode()
@@ -40,11 +58,41 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Medium");
     }
 
+    // Change to Medium 2
+    public void PlayMediumMode2()
+    {
+        Debug.Log("Went to Medium Scene 2");
+        SceneManager.LoadScene("Medium2");
+    }
+
+    // Change to Medium 3
+    public void PlayMediumMode3()
+    {
+        Debug.Log("Went to Medium Scene 3");
+        SceneManager.LoadScene("Medium3");
+    }
+
+    // HARD SCENES
+
     // Change to Hard Mode Scene
     public void PlayHardMode()
     {
         Debug.Log("Went to Hard Scene");
         SceneManager.LoadScene("Hard");
+    }
+    
+    // Change to Hard 2
+    public void PlayHardMode2()
+    {
+        Debug.Log("Went to Hard Scene 2");
+        SceneManager.LoadScene("Hard 2");
+    }
+
+    // Change to Hard 3
+    public void PlayHardMode3()
+    {
+        Debug.Log("Went to Hard Scene 3");
+        SceneManager.LoadScene("Hard 3");
     }
 
     // Go to How to Play Canvas
