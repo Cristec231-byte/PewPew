@@ -18,6 +18,10 @@ public class Health : MonoBehaviour
     [SerializeField]
     private GameOverScript gameOverScript;
 
+    // Reference to the Timer script
+    [SerializeField]
+    private Timer timer;
+
     void Start()
     {
         health = maxHealth;
@@ -52,6 +56,13 @@ public class Health : MonoBehaviour
             {
                 gameOverScript.ShowGameOverScreen();
             }
+
+            // Stop the timer when player dies
+            if (timer != null)
+            {
+                timer.StopTimer();
+            }
+
             Destroy(gameObject);
         }
     }

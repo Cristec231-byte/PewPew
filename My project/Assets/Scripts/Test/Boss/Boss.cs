@@ -18,17 +18,32 @@ public class Boss : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        // Increment the cooldown timer
-        cooldownTimer += Time.deltaTime;
+    public float bossHealth = 100f; // Add this to keep track of boss health
 
-        // Check if the cooldown timer has exceeded the attack cooldown
-        if (cooldownTimer > attackCoolDown)
+    void Update()
+    {
+        // Check if the boss is still alive
+        if (bossHealth > 0)
         {
-            Attack();
+            cooldownTimer += Time.deltaTime;
+
+            if (cooldownTimer > attackCoolDown)
+            {
+                Attack();
+            }
+        }
+        else
+        {
+            OnBossDeath();
         }
     }
+
+    private void OnBossDeath()
+    {
+        // Stop the timer when boss health is 0
+        FindObjectOfType<Timer>().StopTimer();
+    }
+
 
     private void Attack()
     {

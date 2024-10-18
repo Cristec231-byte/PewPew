@@ -16,6 +16,9 @@ public class EnemyHealth : MonoBehaviour
      [SerializeField]
     private GameOverScript gameOverScript;
 
+    [SerializeField]
+    private Timer timer;  // Reference to the Timer script
+
     void Start()
     {
         health = maxHealth;
@@ -48,7 +51,12 @@ public class EnemyHealth : MonoBehaviour
                 gameOverScript.ShowGameOverScreen();
                 Time.timeScale = 0;
             }
-            
+            // Stop the timer
+            if (timer != null)
+            {
+                timer.StopTimer();
+            }
+
             Destroy(gameObject);
         }
 
