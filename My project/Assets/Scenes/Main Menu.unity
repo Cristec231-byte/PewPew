@@ -436,7 +436,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2051697828}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4215,8 +4215,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1022279341}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: GoToScoreboard
+        m_TargetAssemblyTypeName: MainMenu, Scripts
+        m_MethodName: GoToHowToPlay
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4277,7 +4277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 1844537541}
-  howToPlayMenu: {fileID: 0}
+  howToPlayMenu: {fileID: 1571158542}
   levelSelect: {fileID: 0}
   characterSelect: {fileID: 0}
 --- !u!1 &1080130128
@@ -4998,8 +4998,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2019376056}
+  m_Children: []
   m_Father: {fileID: 1386193285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5051,7 +5050,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1901267797}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SetQuality, Assembly-CSharp
         m_MethodName: SetHighQuality
         m_Mode: 1
@@ -5132,10 +5131,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1901267796}
   - {fileID: 1364950892}
-  - {fileID: 339143463}
-  - {fileID: 2051697828}
   - {fileID: 68045167}
   m_Father: {fileID: 340069566}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5563,8 +5559,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1445366234}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: ReturnToMainMenu
+        m_TargetAssemblyTypeName: MainMenu, Scripts
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7340,3 +7336,4 @@ SceneRoots:
   - {fileID: 340069566}
   - {fileID: 209759888}
   - {fileID: 855194180}
+  - {fileID: 112018755}
