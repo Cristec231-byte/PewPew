@@ -14960,7 +14960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21621,9 +21621,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 30
-  slider: {fileID: 0}
-  valueText: {fileID: 0}
-  gameOverScript: {fileID: 0}
+  slider: {fileID: 1902837205}
+  valueText: {fileID: 1631331201}
+  gameOverScript: {fileID: 1657894694}
 --- !u!95 &999282955
 Animator:
   serializedVersion: 5
@@ -21677,13 +21677,13 @@ MonoBehaviour:
   attackCoolDown: 0.2
   firepoint: {fileID: 794372800}
   fireballs:
-  - {fileID: 211974209}
-  - {fileID: 875206569}
-  - {fileID: 498155121}
+  - {fileID: 1494590553}
+  - {fileID: 229157015}
+  - {fileID: 839397090}
   - {fileID: 1531812598}
-  - {fileID: 1945725220}
+  - {fileID: 1007849948}
   - {fileID: 7678198}
-  - {fileID: 1221713259}
+  - {fileID: 498155121}
   - {fileID: 1007849948}
   - {fileID: 839397090}
   - {fileID: 229157015}
@@ -34343,13 +34343,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 211974210}
-  - {fileID: 875206570}
   - {fileID: 498155122}
   - {fileID: 1531812599}
-  - {fileID: 1945725221}
   - {fileID: 7678199}
-  - {fileID: 1221713260}
   - {fileID: 1007849949}
   - {fileID: 839397091}
   - {fileID: 229157016}

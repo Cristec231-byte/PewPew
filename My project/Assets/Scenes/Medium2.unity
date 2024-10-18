@@ -1700,9 +1700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 30
-  slider: {fileID: 0}
-  valueText: {fileID: 0}
-  gameOverScript: {fileID: 0}
+  slider: {fileID: 1902837205}
+  valueText: {fileID: 1631331201}
+  gameOverScript: {fileID: 1657894694}
 --- !u!95 &106810956
 Animator:
   serializedVersion: 5
@@ -1756,13 +1756,13 @@ MonoBehaviour:
   attackCoolDown: 0.2
   firepoint: {fileID: 343854343}
   fireballs:
-  - {fileID: 2006122841}
+  - {fileID: 416981693}
   - {fileID: 2109252674}
   - {fileID: 845417125}
   - {fileID: 688592527}
   - {fileID: 1799107495}
   - {fileID: 844086160}
-  - {fileID: 1637834086}
+  - {fileID: 2109252674}
   - {fileID: 740150546}
   - {fileID: 982283482}
   - {fileID: 63576380}
@@ -3128,7 +3128,7 @@ Transform:
   m_LocalScale: {x: 4.591057, y: 3.522383, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 897737785}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &144548037
 MonoBehaviour:
@@ -3143,6 +3143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 200
+  Damage: 0
 --- !u!95 &144548038
 Animator:
   serializedVersion: 5
@@ -4367,7 +4368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &256310074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4436,18 +4437,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCoolDown: 0.8
-  firepoint: {fileID: 628432944}
+  firepoint: {fileID: 0}
   fireballs:
-  - {fileID: 2165196}
-  - {fileID: 1857037438}
-  - {fileID: 934695529}
-  - {fileID: 193735603}
-  - {fileID: 589058385}
-  - {fileID: 1940213598}
-  - {fileID: 1043351237}
-  - {fileID: 1540259527}
-  - {fileID: 1604450578}
-  - {fileID: 757866139}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 144548035}
   shootingsound: {fileID: 8300000, guid: 09fdde3ad2a2a18459d09f5d14926c0b, type: 3}
 --- !u!50 &256310078
@@ -4586,8 +4587,7 @@ Transform:
   m_LocalPosition: {x: -28.62, y: -8.4, z: 0}
   m_LocalScale: {x: 11, y: 11, z: 9}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 628432944}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267953784
@@ -17034,7 +17034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41576,13 +41576,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2006122842}
   - {fileID: 2109252675}
   - {fileID: 845417126}
   - {fileID: 688592528}
   - {fileID: 1799107496}
   - {fileID: 844086161}
-  - {fileID: 1637834087}
   - {fileID: 740150547}
   - {fileID: 982283483}
   - {fileID: 63576381}
@@ -54057,3 +54055,5 @@ SceneRoots:
   - {fileID: 1719610912}
   - {fileID: 470159775}
   - {fileID: 322071577}
+  - {fileID: 144548036}
+  - {fileID: 256310081}
