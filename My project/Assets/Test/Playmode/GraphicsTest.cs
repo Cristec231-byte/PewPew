@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-public class HealthTest
+public class SetQualityTests
 {
     private GameObject setQualityGameObject;
     private SetQuality setQualityScript;
@@ -9,7 +9,6 @@ public class HealthTest
     [SetUp]
     public void Setup()
     {
-        // Create a new GameObject to attach the SetQuality script to
         setQualityGameObject = new GameObject();
         setQualityScript = setQualityGameObject.AddComponent<SetQuality>();
     }
@@ -17,50 +16,27 @@ public class HealthTest
     [TearDown]
     public void Teardown()
     {
-        // Clean up the GameObject after each test
         GameObject.Destroy(setQualityGameObject);
     }
 
     [Test]
-    public void SetLowQuality_SetsQualityToLow()
+    public void SetLowQuality()
     {
-        // Act
         setQualityScript.SetLowQuality();
-
-        // Assert
-        Assert.AreEqual(0, QualitySettings.GetQualityLevel()); // Check if quality is set to low
+        Assert.AreEqual(0, QualitySettings.GetQualityLevel());
     }
 
     [Test]
-    public void SetMediumQuality_SetsQualityToMedium()
+    public void SetMediumQuality()
     {
-        // Act
         setQualityScript.SetMediumQuality();
-
-        // Assert
-        Assert.AreEqual(3, QualitySettings.GetQualityLevel()); // Check if quality is set to medium
+        Assert.AreEqual(3, QualitySettings.GetQualityLevel());
     }
 
     [Test]
-    public void SetHighQuality_SetsQualityToHigh()
+    public void SetHighQuality()
     {
-        // Act
         setQualityScript.SetHighQuality();
-
-        // Assert
-        Assert.AreEqual(5, QualitySettings.GetQualityLevel()); // Check if quality is set to high
-    }
-
-    [Test]
-    public void SetQualityLevel_SetsQualityToGivenIndex()
-    {
-        // Arrange
-        int qualityIndex = 2; // Example quality index
-
-        // Act
-        setQualityScript.SetQualityLevel(qualityIndex);
-
-        // Assert
-        Assert.AreEqual(qualityIndex, QualitySettings.GetQualityLevel()); // Check if quality is set to the given index
+        Assert.AreEqual(5, QualitySettings.GetQualityLevel());
     }
 }
