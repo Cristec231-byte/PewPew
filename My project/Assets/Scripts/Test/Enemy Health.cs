@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
+using Unity.VisualScripting;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,12 +12,14 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth = 10;
     public Slider slider;
 
+    public GameObject Popuptext;
+    public TMP_Text PopupText;
+
     [SerializeField]
-    private TextMeshProUGUI valueText;
+    private TextMeshPro valueText;
 
      [SerializeField]
     private GameOverScript gameOverScript;
-
     void Start()
     {
         health = maxHealth;
@@ -41,7 +45,12 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float amount)
     {
         health -= amount;
+        //PopupText.text = amount.ToString();
 
+        Vector3 offset = new Vector3(0, 2, 0);
+
+        Instantiate(Popuptext, transform.position + offset, Quaternion.identity);
+        
         if (health <= 0)
         {
              // Notify GameOverScript about the Boss death
@@ -58,6 +67,11 @@ public class EnemyHealth : MonoBehaviour
         slider.value = health;
         UpdateHealthText();
 
+    }
+
+    private void Instantiate(GameObject popuptext, float v, Quaternion identity)
+    {
+        throw new NotImplementedException();
     }
 
     internal void ChangeBossHealth(int amountToChangeStat)
