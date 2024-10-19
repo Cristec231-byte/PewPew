@@ -15430,9 +15430,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 70
-  slider: {fileID: 0}
-  valueText: {fileID: 0}
-  gameOverScript: {fileID: 0}
+  slider: {fileID: 1902837205}
+  valueText: {fileID: 1631331201}
+  gameOverScript: {fileID: 1657894694}
 --- !u!95 &712477710
 Animator:
   serializedVersion: 5
@@ -15478,7 +15478,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712477708}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d23a8d1d28461f24abe914a8a8245243, type: 3}
   m_Name: 
@@ -15513,7 +15513,7 @@ MonoBehaviour:
   attackCoolDown: 1
   firepoint: {fileID: 1906494454}
   firepoint2: {fileID: 1712358196}
-  firepoint3: {fileID: 1076494218}
+  firepoint3: {fileID: 0}
   fireballs:
   - {fileID: 214256468}
   - {fileID: 1471987912}
@@ -15666,7 +15666,6 @@ Transform:
   m_Children:
   - {fileID: 1906494454}
   - {fileID: 1712358196}
-  - {fileID: 1076494218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &714328246
@@ -16649,7 +16648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24249,7 +24248,7 @@ Transform:
   m_LocalScale: {x: 4.591057, y: 3.522383, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 897737785}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1043351239
 MonoBehaviour:
@@ -24264,6 +24263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 0
 --- !u!95 &1043351240
 Animator:
   serializedVersion: 5
@@ -27347,7 +27347,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 172488521}
   - {fileID: 646138087}
   - {fileID: 895450383}
   m_Father: {fileID: 1774238348}
@@ -36825,7 +36824,7 @@ Transform:
   m_LocalScale: {x: 4.591057, y: 3.522383, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 897737785}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1540259529
 MonoBehaviour:
@@ -36840,6 +36839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 0
 --- !u!95 &1540259530
 Animator:
   serializedVersion: 5
@@ -38261,7 +38261,7 @@ Transform:
   m_LocalScale: {x: 4.591057, y: 3.522383, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 897737785}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1604450580
 MonoBehaviour:
@@ -38276,6 +38276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 0
 --- !u!95 &1604450581
 Animator:
   serializedVersion: 5
@@ -45382,7 +45383,7 @@ Transform:
   m_LocalScale: {x: 4.591057, y: 3.522383, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 897737785}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1857037440
 MonoBehaviour:
@@ -45397,6 +45398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
+  Damage: 0
 --- !u!95 &1857037441
 Animator:
   serializedVersion: 5
@@ -52272,3 +52274,7 @@ SceneRoots:
   - {fileID: 756813165}
   - {fileID: 2124616124}
   - {fileID: 1505772183}
+  - {fileID: 1043351238}
+  - {fileID: 1540259528}
+  - {fileID: 1604450579}
+  - {fileID: 1857037439}

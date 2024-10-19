@@ -4215,7 +4215,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1091295910}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -13182,7 +13182,6 @@ RectTransform:
   m_Children:
   - {fileID: 985185714}
   - {fileID: 291632486}
-  - {fileID: 1091295910}
   m_Father: {fileID: 1559785422}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -15396,7 +15395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29484,7 +29483,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297840286}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d23a8d1d28461f24abe914a8a8245243, type: 3}
   m_Name: 
@@ -34458,7 +34457,7 @@ MonoBehaviour:
   _musicSlider: {fileID: 93254880}
   _pewSlider: {fileID: 1487849252}
   _sfxSlider: {fileID: 637114035}
-  _musicButton: {fileID: 492810282}
+  _musicButton: {fileID: 0}
   _pewButton: {fileID: 1627796266}
   _sfxButton: {fileID: 132711217}
   _backButton: {fileID: 0}
@@ -35616,7 +35615,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 492810279}
   - {fileID: 1627796263}
   - {fileID: 132711220}
   - {fileID: 93254879}
@@ -43228,7 +43226,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 492810279}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -49558,3 +49556,5 @@ SceneRoots:
   - {fileID: 756813165}
   - {fileID: 1333368094}
   - {fileID: 1533656062}
+  - {fileID: 238332113}
+  - {fileID: 1871020301}
