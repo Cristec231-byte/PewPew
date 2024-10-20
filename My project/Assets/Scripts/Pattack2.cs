@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Pattack : MonoBehaviour
+public class Pattack2 : MonoBehaviour
 {
     [SerializeField] private float attackCoolDown;
     [SerializeField] private Transform firepoint;
@@ -31,7 +31,7 @@ public class Pattack : MonoBehaviour
     private void Attack()
     {
         //SoundManager2.instance.PlaySound(shootingsound);
-        AudioManager.instance.PlayPew("Mathew");
+        AudioManager.instance.PlayPew("C-602");
         
        anim.SetTrigger("attack");
        cooldownTimer = 0;
