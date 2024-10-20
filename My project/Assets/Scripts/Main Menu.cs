@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     public GameObject howToPlayMenu; // How to Play Canvas
     public GameObject levelSelect; // Level Select Canvas
     public GameObject characterSelect; // Character Select Canvas
-    public GameObject settingsMenu; // Settings Canvas
+    public GameObject graphicsMenu; // Settings Canvas
     public GameObject scoreboardMenu; // Scoreboard Menu
 
     public GameObject levelSelect2; // Janmie
@@ -29,7 +29,7 @@ public class MainMenu : MonoBehaviour
         howToPlayMenu.SetActive(false);
         levelSelect.SetActive(false);
         characterSelect.SetActive(false);
-        settingsMenu.SetActive(false);
+        graphicsMenu.SetActive(false);
         scoreboardMenu.SetActive(false);
 
         levelSelect2.SetActive(false);
@@ -49,7 +49,7 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Went to Settings");
         mainMenu.SetActive(false);
-        settingsMenu.SetActive(true);
+        graphicsMenu.SetActive(true);
     }
 
     // Go to Scoreboard Canvas
@@ -89,7 +89,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Went back to Main Menu");
         mainMenu.SetActive(true);
         howToPlayMenu.SetActive(false);
-        settingsMenu.SetActive(false);
+        graphicsMenu.SetActive(false);
         scoreboardMenu.SetActive(false);
     }
 
