@@ -15628,7 +15628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &756813162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18917,6 +18917,10 @@ MonoBehaviour:
   howToPlayMenu: {fileID: 0}
   levelSelect: {fileID: 0}
   characterSelect: {fileID: 0}
+  settingsMenu: {fileID: 0}
+  scoreboardMenu: {fileID: 0}
+  levelSelect2: {fileID: 0}
+  levelSelect3: {fileID: 0}
 --- !u!114 &865767952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26954,6 +26958,10 @@ MonoBehaviour:
   howToPlayMenu: {fileID: 0}
   levelSelect: {fileID: 0}
   characterSelect: {fileID: 0}
+  settingsMenu: {fileID: 0}
+  scoreboardMenu: {fileID: 0}
+  levelSelect2: {fileID: 0}
+  levelSelect3: {fileID: 0}
 --- !u!1 &1181584949
 GameObject:
   m_ObjectHideFlags: 0

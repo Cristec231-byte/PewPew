@@ -21,18 +21,24 @@ EditorBuildSettings:
     path: Assets/Scenes/Easy2.unity
     guid: f8c7e5420d6ce5448ae4f885ae8d59b7
   - enabled: 1
-    path: Assets/Scenes/Medium2.unity
-    guid: d8564e107bc3cda4e98a08e6a6a3b344
-  - enabled: 1
-    path: Assets/Scenes/Hard 2.unity
-    guid: f5afcf01b459fb647be65740b7a0b684
-  - enabled: 1
     path: Assets/Scenes/Easy3.unity
     guid: 57e65377fa039be43a4d610ec1e03627
+  - enabled: 1
+    path: Assets/Scenes/Medium2.unity
+    guid: d8564e107bc3cda4e98a08e6a6a3b344
   - enabled: 1
     path: Assets/Scenes/Medium3.unity
     guid: 13cbfa75b4f91284f9c114050adff783
   - enabled: 1
+    path: Assets/Scenes/Hard 2.unity
+    guid: f5afcf01b459fb647be65740b7a0b684
+  - enabled: 1
     path: Assets/Scenes/Hard 3.unity
     guid: b1b60332cfcf0f0438c496935a25e33b
+  - enabled: 0
+    path: Assets/Scenes/Scoreboard.unity
+    guid: 435034e26f04d144fa6fedafb9685690
+  - enabled: 1
+    path: Assets/Scenes/Level Selection Test.unity
+    guid: 58048ed2b54a52b439b3354c7a8328ed
   m_configObjects: {}
