@@ -16,7 +16,7 @@ public class EnemyHealth : MonoBehaviour
     public TMP_Text PopupText;
 
     [SerializeField]
-    private TextMeshPro valueText;
+    private TextMeshProUGUI valueText;
 
      [SerializeField]
     private GameOverScript gameOverScript;
