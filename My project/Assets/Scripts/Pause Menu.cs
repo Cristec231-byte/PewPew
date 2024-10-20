@@ -65,6 +65,7 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    // Pauses the game
     public void PauseGame()
     {
         Debug.Log("Game paused");
@@ -73,6 +74,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    // Resumes the game
     public void ResumeGame()
     {
         Debug.Log("Game resumed");
