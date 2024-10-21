@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  Damage: 0
+  Damage: 1
 --- !u!1 &15163777
 GameObject:
   m_ObjectHideFlags: 0
@@ -31743,7 +31743,7 @@ MonoBehaviour:
   slider: {fileID: 111046929}
   Popuptext: {fileID: 80031634}
   PopupText: {fileID: 80031636}
-  valueText: {fileID: 0}
+  valueText: {fileID: 1836481508}
   gameOverScript: {fileID: 1657894694}
 --- !u!95 &1406103904
 Animator:

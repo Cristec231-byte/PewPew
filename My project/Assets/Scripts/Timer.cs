@@ -32,13 +32,7 @@ public class Timer : MonoBehaviour
 
     public void StopTimer()
     {
-        timeIsRunning = false;
-
-        // Convert the elapsed time to seconds for easier comparison (shortest time wins)
-        float elapsedTime = timeRemaining;
-
-        // Add the time to the highscore table
-        FindObjectOfType<HighscoreTable>().AddHighscoreEntry(Mathf.FloorToInt(elapsedTime), "PlayerName");
+       Time.timeScale = 0;
     }
 
     void DisplayTime(float timeToDisplay)

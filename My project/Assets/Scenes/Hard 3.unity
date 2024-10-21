@@ -32274,7 +32274,7 @@ MonoBehaviour:
   slider: {fileID: 111046929}
   Popuptext: {fileID: 1501464315}
   PopupText: {fileID: 1501464317}
-  valueText: {fileID: 0}
+  valueText: {fileID: 1836481508}
   gameOverScript: {fileID: 1657894694}
 --- !u!95 &1406103904
 Animator:

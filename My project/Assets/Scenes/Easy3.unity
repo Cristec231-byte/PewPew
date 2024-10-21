@@ -33016,7 +33016,7 @@ MonoBehaviour:
   slider: {fileID: 111046929}
   Popuptext: {fileID: 1107960219}
   PopupText: {fileID: 1107960221}
-  valueText: {fileID: 0}
+  valueText: {fileID: 1836481508}
   gameOverScript: {fileID: 1657894694}
 --- !u!95 &1406103904
 Animator:
