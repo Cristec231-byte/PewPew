@@ -13,17 +13,21 @@ Table of Contents
 PewPew is a 2D pixel shooting game inspired by a classic game "Contra". As an soldier and a hero, you must confront the demons to protect the planet Earth. Whenever you see the enemy, the only choice you have is to PEWPEW !
 
 #Features
+- Select your character
+- Each character has unique features
 - Shooting
+- Display damage
 - Basic enemies and Boss
 - Camera movement (following player)
 - Player health bar
 - Boss health bar
 - Game Over Screen
+- Setting (graphic and sound)
 - Main menu Screen
 - Pause effect button
 - Picking up item for healing
 - Description of items
-- Dodgeing enemy fire
+- In game timer
 - Iventory
 - Jump up and drop down through platforms
 - Smooth movements
@@ -64,12 +68,6 @@ Version Control: Git
 + .git
   
 + Myproject
-  + .vscode
-  + Asset
-  + Library
-  + Package
-  + ProjectSettings
-  + UserSettings
   
 + .gitignore
   
